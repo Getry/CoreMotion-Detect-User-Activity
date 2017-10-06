@@ -14,6 +14,9 @@
 		963B6F801F74F0AA00B2F400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963B6F7E1F74F0AA00B2F400 /* LaunchScreen.storyboard */; };
 		963B6F8B1F74F0AB00B2F400 /* demoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F8A1F74F0AB00B2F400 /* demoappTests.swift */; };
 		963B6F961F74F0AB00B2F400 /* demoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F951F74F0AB00B2F400 /* demoappUITests.swift */; };
+		963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */; };
+		963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FE21F75A68300B2F400 /* PlayerController.swift */; };
+		96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		963B6F911F74F0AB00B2F400 /* demoappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		963B6F951F74F0AB00B2F400 /* demoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoappUITests.swift; sourceTree = "<group>"; };
 		963B6F971F74F0AB00B2F400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963B6FE01F75A30B00B2F400 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		963B6FE21F75A68300B2F400 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,13 @@
 		963B6F741F74F0AA00B2F400 /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
+				96F1F1CF1F83FD3F00B93D07 /* Controllers */,
 				963B6F751F74F0AA00B2F400 /* AppDelegate.swift */,
-				963B6F771F74F0AA00B2F400 /* ViewController.swift */,
-				963B6F791F74F0AA00B2F400 /* Main.storyboard */,
 				963B6F7C1F74F0AA00B2F400 /* Assets.xcassets */,
 				963B6F7E1F74F0AA00B2F400 /* LaunchScreen.storyboard */,
+				963B6F791F74F0AA00B2F400 /* Main.storyboard */,
 				963B6F811F74F0AA00B2F400 /* Info.plist */,
+				963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */,
 			);
 			path = demoapp;
 			sourceTree = "<group>";
@@ -123,6 +130,16 @@
 				963B6F971F74F0AB00B2F400 /* Info.plist */,
 			);
 			path = demoappUITests;
+			sourceTree = "<group>";
+		};
+		96F1F1CF1F83FD3F00B93D07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				963B6F771F74F0AA00B2F400 /* ViewController.swift */,
+				96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */,
+				963B6FE21F75A68300B2F400 /* PlayerController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +278,9 @@
 			files = (
 				963B6F781F74F0AA00B2F400 /* ViewController.swift in Sources */,
 				963B6F761F74F0AA00B2F400 /* AppDelegate.swift in Sources */,
+				963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */,
+				96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */,
+				963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +446,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2SBKB36F6;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.demoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +463,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2SBKB36F6;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.demoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,6 +578,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				963B6FE01F75A30B00B2F400 /* Model.xcdatamodel */,
+			);
+			currentVersion = 963B6FE01F75A30B00B2F400 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 963B6F6A1F74F0AA00B2F400 /* Project object */;
 }
