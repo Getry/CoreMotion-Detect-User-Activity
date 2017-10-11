@@ -15,7 +15,6 @@
 		963B6F8B1F74F0AB00B2F400 /* demoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F8A1F74F0AB00B2F400 /* demoappTests.swift */; };
 		963B6F961F74F0AB00B2F400 /* demoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F951F74F0AB00B2F400 /* demoappUITests.swift */; };
 		963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */; };
-		963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FE21F75A68300B2F400 /* PlayerController.swift */; };
 		96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		963B6F951F74F0AB00B2F400 /* demoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoappUITests.swift; sourceTree = "<group>"; };
 		963B6F971F74F0AB00B2F400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		963B6FE01F75A30B00B2F400 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		963B6FE21F75A68300B2F400 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +135,6 @@
 			children = (
 				963B6F771F74F0AA00B2F400 /* ViewController.swift */,
 				96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */,
-				963B6FE21F75A68300B2F400 /* PlayerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -278,7 +275,6 @@
 			files = (
 				963B6F781F74F0AA00B2F400 /* ViewController.swift in Sources */,
 				963B6F761F74F0AA00B2F400 /* AppDelegate.swift in Sources */,
-				963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */,
 				96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */,
 				963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */,
 			);
